@@ -74,8 +74,16 @@
           </ActivityAction.Argument>
           <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1706" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Default="rahultanwarlpu@gmail.com" Name="strUserName" />
-              <Variable x:TypeArguments="x:String" Default="Rt@9872029902" Name="strPassword" />
+              <Variable x:TypeArguments="x:String" Name="strUserName">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="strPassword">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </Variable.Default>
+              </Variable>
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
